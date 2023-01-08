@@ -26,4 +26,12 @@ class PageController extends CI_Controller
 	}
 
 
+
+	public function blog($blog = '')
+	{
+		echo "Blog method - Parameter: " . $blog;
+		$this->load->view($blog);
+	}
+
+
 }

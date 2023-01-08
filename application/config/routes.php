@@ -53,4 +53,8 @@ $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = TRUE;
 
-$route['about'] = 'welcome/about';
+$route['home'] = 'PageController/index';
+$route['about'] = 'PageController/about';
+
+// any data type can be passed as parameter (e.g. num - integers)
+$route['blog/(:any)'] = 'PageController/blog/$1';
